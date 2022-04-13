@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import operator
+import sys
 
 def function(name, num):
     words = []
@@ -29,4 +30,7 @@ def function(name, num):
 
 
 if __name__ == '__main__':
-    function("word_freq.txt",5)
+    address = sys.argv[1]
+    number = int(sys.argv[2])
+
+    function(address,number)
