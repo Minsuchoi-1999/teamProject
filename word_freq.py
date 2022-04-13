@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+import operator
+
 def function(name, num):
     words = []
     D = {}
@@ -19,10 +21,12 @@ def function(name, num):
             D[word] += line.count(word)
         
     Dlist = D.items()
-    for d in Dlist:
-        print(d)
+    d1 = sorted(Dlist, key=operator.itemgetter(1),reverse=True)
+    print(d1)
     fp.close
+
+    
 
 
 if __name__ == '__main__':
-    function("word_freq.txt",10)
+    function("word_freq.txt",5)
