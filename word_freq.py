@@ -19,12 +19,12 @@ def function(name, num):
         D[word] =0
         for line in lines:
             D[word] += line.count(word)
-        
+    
     Dlist = D.items()
-    d1 = sorted(Dlist, key=operator.itemgetter(1),reverse=True)
-    print(d1)
+    d1 = sorted(Dlist, key=operator.itemgetter(1),reverse=True) 
+    for i in range(0,num):
+        print('{:<10} {:>10}'.format(d1[i][0],d1[i][1]))
     fp.close
-
     
 
 
