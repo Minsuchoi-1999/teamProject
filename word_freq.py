@@ -4,7 +4,8 @@ def function(name, num):
     fp = open(name, "r")
     lines = fp.readlines()
     for line in lines:
-        print(line)
+        word = line.split();
+        print(word)
     fp.close
 
 
