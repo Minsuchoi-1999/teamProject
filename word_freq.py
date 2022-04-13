@@ -3,6 +3,8 @@
 import operator
 import sys
 
+#2021115572 choi_minsu
+
 def function(name, num):
     words = []
     D = {}
