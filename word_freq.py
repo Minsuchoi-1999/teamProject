@@ -1,11 +1,13 @@
 #!/usr/bin/python
 
 def function(name, num):
+    words = []
     fp = open(name, "r")
     lines = fp.readlines()
     for line in lines:
         word = line.split();
-        print(word)
+        words.extend(word);
+    print(words)
     fp.close
 
 
