@@ -5,8 +5,9 @@ def function(name, num):
     fp = open(name, "r")
     lines = fp.readlines()
     for line in lines:
-        word = line.split();
-        words.extend(word);
+        line = line.replace('.',' ').replace(',', ' ').replace('!', ' ').replace('?',' ').replace('-',' ')
+        word = line.split()
+        words.extend(word)
     print(words)
     fp.close
 
