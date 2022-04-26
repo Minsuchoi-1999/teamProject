@@ -8,4 +8,4 @@ def menu3():
     print("intersection : ", list(set(num_list1) & set(num_list2)));
 
 if __name__=="__main__" :
-    menu3();
+    print();
