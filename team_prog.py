@@ -16,4 +16,5 @@ if __name__=="__main__" :
       if menu == 3:
           fibo.fibo()
       if menu == 4:
+          print(exit the program..)
           break
