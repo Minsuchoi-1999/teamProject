@@ -1,8 +1,9 @@
+#!/usr/bin/python
 # HW06 Team Project main script
 
 import menu3
 import b2h
-#import fibo
+import fibo
 
 if __name__=="__main__" :
   menu = 0
@@ -13,7 +14,6 @@ if __name__=="__main__" :
       if menu == 2:
           menu3.menu3()
       if menu == 3:
-          #fibo.fibo()
-          print("ex")
+          fibo.fibo()
       if menu == 4:
           break
