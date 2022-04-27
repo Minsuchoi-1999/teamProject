@@ -9,5 +9,5 @@ def fibo():
 		if i == n-1:
 			print("\nF",n,"=", a)
 		a,b=b,a+b 
-if__name__=="__main__":
+if __name__=="__main__":
 	print()
