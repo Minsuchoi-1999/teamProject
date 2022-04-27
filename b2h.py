@@ -10,5 +10,5 @@ def b2h():
     print("hexa number:", hex_value)
 
 if __name__=="__main__":
-    b2h()
+    print()
 
